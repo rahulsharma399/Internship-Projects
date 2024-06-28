@@ -36,7 +36,7 @@ root.title("Simple Calculator") #set window size and title
 text_result = tk.Text(root, height=2, width=16, font=("Arial", 24))
 text_result.grid(columnspan=5)
 
-#Creating buttons for various operations and numbers within the calculator
+#Buttons for operations and numbers of calculator
 btn_1 = tk.Button(root, text="1", command=lambda: add_to_calculation(1), width=5, font=("Arial", 14))
 btn_1.grid(row=2, column=1)
 btn_2 = tk.Button(root, text="2", command=lambda: add_to_calculation(2), width=5, font=("Arial", 14))
@@ -74,5 +74,5 @@ btn_clear.grid(row=6, column=1, columnspan=2)
 btn_equals = tk.Button(root, text="=", command= evaluate_calculation, width=11, font=("Arial", 14))
 btn_equals.grid(row=6, column=3, columnspan=2)
 
-#Run the application
+#Run the Code in loop
 root.mainloop()
